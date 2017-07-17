@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <Button
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建茶评笔记"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/befor_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@id/linear_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/create_tea_comment_progress_01"
+                android:orientation="horizontal"
+                android:weightSum="3.0">
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="1.泡前准备"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="2.选择泡法"
+                    android:textColor="#ffb1987a"
+                    android:textSize="@dimen/common_text_size" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:text="3.撰写茶评"
+                    android:textColor="#ffb1987a"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/light_black_bg_color"
+                android:padding="@dimen/margin_10">
+
+                <RelativeLayout
+                    android:id="@id/tea_comment_add_pic_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/side_write_edit_bg"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@id/tv_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="+ 添加封面"
+                        android:textColor="@color/common_text_color_gray"
+                        android:textSize="20.0sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignBottom="@id/tv_info"
+                        android:layout_alignTop="@id/tv_info"
+                        android:layout_toRightOf="@id/tv_info"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@id/tv_info1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:hint="(必填)" />
+
+                        <TextView
+                            android:id="@id/image_star"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_toRightOf="@id/tv_info1"
+                            android:gravity="center_vertical"
+                            android:text="*"
+                            android:textColor="@color/red_color"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@id/tea_comment_pic_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_200"
+                    android:background="@color/light_black_bg_color"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@id/tea_comment_iv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/create_tea_comment_top_pic_test" />
+
+                    <Button
+                        android:id="@id/tea_comment_change_pic_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common_white"
+                        android:drawableLeft="@drawable/add_pic_btn_icon"
+                        android:drawablePadding="@dimen/margin_5"
+                        android:padding="@dimen/margin_5"
+                        android:text="更改封面"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="笔记标题"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <EditText
+                            android:id="@id/tea_comment_title_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/edit_line"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@null"
+                            android:hint="输入标题(24字以内)"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/common_black"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:id="@id/edit_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/tea_comment_title_et"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@id/tv_info1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:hint="(必填)" />
+
+                            <TextView
+                                android:id="@id/image_star"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/tv_info1"
+                                android:gravity="center_vertical"
+                                android:text="*"
+                                android:textColor="@color/red_color"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="茶叶名称"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <EditText
+                            android:id="@id/tea_comment_name_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@null"
+                            android:hint="输入茶叶名称(12字以内)"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/common_black"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:id="@id/edit11_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@id/tea_comment_name_et"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@id/tv_info1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="center"
+                                android:hint="(必填)" />
+
+                            <TextView
+                                android:id="@id/image_star"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_toRightOf="@id/tv_info1"
+                                android:gravity="center_vertical"
+                                android:text="*"
+                                android:textColor="@color/red_color"
+                                android:textSize="18.0sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="茶叶来源"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <EditText
+                            android:id="@id/tea_comment_source_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@null"
+                            android:hint="输入茶叶来源(12字以内)"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/common_black"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:id="@id/edit13_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="冲泡克数"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <EditText
+                            android:id="@id/tea_comment_weight_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@null"
+                            android:hint="输入冲泡克数"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/common_black"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:id="@id/edit15_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="冲泡用水"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <EditText
+                            android:id="@id/tea_comment_water_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@null"
+                            android:hint="输入冲泡用水(12字以内)"
+                            android:imeOptions="actionNext"
+                            android:singleLine="true"
+                            android:textColor="@color/common_black"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:id="@id/edit19_line"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="冲泡用具"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <EditText
+                            android:id="@id/tea_comment_appliance_et"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@null"
+                            android:hint="输入冲泡用具(12字以内)"
+                            android:textColor="@color/common_black"
+                            android:textSize="@dimen/common_text_size" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="隐私设置"
+                        android:textColor="@color/light_brown_text_color"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginLeft="@dimen/margin_10">
+
+                        <CheckBox
+                            android:id="@id/checkbox_secret"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:background="@drawable/push_switch_rbtn_icon"
+                            android:button="@null" />
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/edit_bg_line" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@id/next_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:background="@drawable/round_brown_btn_bg"
+                    android:text="下一步"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/activity_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_commonDetail_areaTv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_margin="@dimen/all_margrin"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="@dimen/all_margrin"
+        android:gravity="center_vertical|left"
+        android:text="杭州"
+        android:textColor="#6E5840"
+        android:textSize="@dimen/text_size" />
+</RelativeLayout>

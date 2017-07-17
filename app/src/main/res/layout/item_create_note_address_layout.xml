@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@id/drag_handle"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/rl_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5">
+
+        <TextView
+            android:id="@id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:singleLine="true"
+            android:textColor="@color/brown_bg_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <TextView
+            android:id="@id/update_address_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_toRightOf="@id/address_tv"
+            android:background="@drawable/round_brown_btn_bg"
+            android:paddingBottom="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_5"
+            android:text="编辑"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_text_size" />
+
+        <ImageView
+            android:id="@id/click_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete_pic_icon" />
+    </RelativeLayout>
+</LinearLayout>

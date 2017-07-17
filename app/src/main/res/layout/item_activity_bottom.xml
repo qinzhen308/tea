@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--茶人笔记活动详情底部 报名 评论 收藏 分享-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_marginTop="@dimen/activity_20dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_20dp"
+        android:background="@color/enter_name_bg"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:src="@drawable/icon_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+android:layout_marginLeft="@dimen/activity_20dp"
+      android:background="@color/share_bg"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:src="@drawable/icon_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_20dp"
+        android:background="@color/share_bg"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/icon_collect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/activity_20dp"
+        android:layout_marginRight="@dimen/activity_20dp"
+        android:background="@color/share_bg"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/icon_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</LinearLayout>

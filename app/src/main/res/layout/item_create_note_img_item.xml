@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@id/drag_handle"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/img_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <RelativeLayout
+            android:id="@id/general_pic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@id/general_pic_url_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_text_color_gray"
+                android:textSize="20.0sp" />
+
+            <ImageView
+                android:id="@id/create_tea_img_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_general_add_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_200"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@id/general_add_pic_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/side_write_edit_bg"
+                android:text="+ 添加内容图片"
+                android:textColor="@color/common_text_color_gray"
+                android:textSize="20.0sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@id/click_remove"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/delete_pic_icon" />
+
+        <ImageView
+            android:id="@id/btn_edit_pic"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@drawable/img_general_notes_edit"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@id/btn_add_pic"
+            android:visibility="gone"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@drawable/add_other_pic_icon" />
+    </LinearLayout>
+</RelativeLayout>

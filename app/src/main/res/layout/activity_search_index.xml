@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:weightSum="6.0">
+
+        <Button
+            android:id="@id/top_back_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="left|center"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="4.0"
+            android:background="@drawable/round_bg"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10">
+
+            <EditText
+                android:id="@id/edtitext"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableLeft="@drawable/index_search_icon"
+                android:drawablePadding="@dimen/margin_10"
+                android:hint="输入您要搜索的內容"
+                android:imeOptions="actionSearch"
+                android:paddingRight="@dimen/margin_10"
+                android:singleLine="true"
+                android:textSize="@dimen/small_text_size" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@id/search_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/round_bg"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/hot_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_60"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:text="热门搜索"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/big_text_size" />
+
+        <com.becdoor.teanotes.view.HotSearchLayout
+            android:id="@+id/layout_hot_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+</LinearLayout>

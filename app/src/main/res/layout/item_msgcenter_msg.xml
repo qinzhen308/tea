@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_msgCenter_msg_allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/all_margrin"
+        android:background="@drawable/bg_line_top_bottom"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/all_margrin"
+        android:paddingLeft="@dimen/all_margrin">
+
+        <TextView
+            android:id="@+id/item_msgCenter_msg_msgTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/all_margrin"
+            android:layout_toLeftOf="@+id/item_msgCenter_msg_statusIv"
+            android:text="title"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_msgCenter_msg_timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_msgCenter_msg_msgTv"
+            android:layout_marginTop="@dimen/activity_15dp"
+            android:drawableLeft="@drawable/time_big_icon"
+            android:drawablePadding="@dimen/all_margrin"
+            android:text="content"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size_small" />
+
+        <ImageView
+            android:id="@+id/item_msgCenter_msg_statusIv"
+            android:layout_width="@dimen/activity_8dp"
+            android:layout_height="@dimen/activity_8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/all_margrin"
+            android:src="@drawable/bg_circle_red" />
+    </RelativeLayout>
+</LinearLayout>

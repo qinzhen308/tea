@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/header_personelSpace_bgIv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_member_bg" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:paddingTop="@dimen/all_margrin">
+
+            <TextView
+                android:id="@+id/header_personelSpace_nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:gravity="center_vertical|left"
+                android:text="mouou"
+                android:textColor="@color/common_black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/header_personelSpace_singnTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_personelSpace_nameTv"
+                android:layout_marginLeft="100dp"
+                android:gravity="center_vertical|left"
+                android:text="个性签名"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_big" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_marginRight="@dimen/all_margrin">
+
+            <RelativeLayout
+                android:id="@+id/header_personelSpace_avatarLayout"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/bg_circle_white">
+
+                <ImageView
+                    android:id="@+id/header_personelSpace_avatarIv"
+                    android:layout_width="@dimen/avatar_size_big"
+                    android:layout_height="@dimen/avatar_size_big"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/icon_login_user" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/header_personelSpace_rankNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/all_margrin"
+                android:background="@drawable/bg_rectangle_brown"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingLeft="@dimen/all_margrin"
+                android:paddingRight="@dimen/all_margrin"
+                android:paddingTop="2dp"
+                android:text="豆粉"
+                android:textColor="#FFDAB3"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_margin="@dimen/all_margrin"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/header_personelSpace_careLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_grey_care">
+
+            <TextView
+                android:id="@+id/header_personelSpace_careTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/space_care_icon"
+                android:drawablePadding="@dimen/all_margrin"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/header_personelSpace_msgLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rectangle_brown5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/space_msg_icon"
+                android:drawablePadding="@dimen/all_margrin"
+                android:gravity="center"
+                android:text="发私信"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_big" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:padding="@dimen/activity_10dp">
+
+        <TextView
+            android:id="@+id/title_leftTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/default_btn_bg"
+            android:textSize="@dimen/text_size" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/index_title_right_bg_color"
+            android:textSize="20sp"
+            android:text="笔记管理"
+            />
+
+        <RelativeLayout
+            android:id="@+id/main_catergoryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_rectangle_btn_coner"
+            android:paddingLeft="3dp"
+            android:layout_toLeftOf="@+id/iv_manage"
+            android:layout_marginRight="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_cate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:layout_centerInParent="true"
+                android:drawablePadding="1dp"
+                android:drawableRight="@drawable/right_arrow_icon2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="全部"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/default_btn_bg" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_manage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_setting"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height_double"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_grey"
+            android:gravity="center"
+            android:text="已发布"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_grey"
+            android:gravity="center"
+            android:text="隐藏"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_grey"
+            android:gravity="center"
+            android:text="草稿箱"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

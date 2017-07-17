@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.becdoor.teanotes.view.ReListView
+            android:id="@+id/navigation_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/navigation_addLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/activity_20dp"
+            android:layout_marginRight="@dimen/activity_20dp"
+            android:layout_marginTop="@dimen/activity_30dp"
+            android:background="@drawable/bg_line_top_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:drawableLeft="@drawable/add_other_pic_icon"
+                android:drawablePadding="@dimen/all_margrin"
+                android:gravity="center"
+                android:text="添加新栏目"
+                android:textColor="#70583E"
+                android:textSize="@dimen/text_size_big" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

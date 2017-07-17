@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?><!--登录-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/login_title" />
+
+    <EditText
+        android:id="@+id/login_nameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/activity_30dp"
+        android:layout_marginRight="@dimen/activity_30dp"
+        android:background="@drawable/bg_rectangle_btn_coner20"
+        android:drawableLeft="@drawable/icon_login_user"
+        android:drawablePadding="@dimen/all_margrin"
+        android:gravity="center_vertical|left"
+        android:hint="@string/login_input"
+        android:paddingLeft="@dimen/activity_5dp"
+        android:paddingRight="@dimen/all_margrin"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/login_pwEdt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/activity_30dp"
+        android:layout_marginRight="@dimen/activity_30dp"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@drawable/bg_rectangle_btn_coner20"
+        android:drawableLeft="@drawable/icon_login_pass"
+        android:drawablePadding="@dimen/all_margrin"
+        android:gravity="center_vertical|left"
+        android:hint="@string/password_input"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/activity_5dp"
+        android:paddingRight="@dimen/all_margrin"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/text_size" />
+
+
+    <Button
+        android:id="@+id/login_loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/activity_30dp"
+        android:layout_marginRight="@dimen/activity_30dp"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@drawable/bg_rectangle_brown"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginTop="@dimen/all_margrin"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/login_findPWTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="@string/forgetpassword"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/text_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/common_black" />
+
+        <TextView
+            android:id="@+id/login_registerTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="@string/register_now"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_useOtherTv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_50dp"
+        android:background="@drawable/login_other_account_bg"
+        android:gravity="center"
+        android:text="@string/user_company"
+        android:textColor="#6A563D"
+        android:textSize="@dimen/text_size_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/activity_20dp"
+        android:layout_marginRight="@dimen/activity_20dp"
+        android:layout_marginTop="@dimen/activity_30dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/login_wxLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/icon_wechat"
+                android:drawablePadding="@dimen/all_margrin"
+                android:gravity="center"
+                android:text="@string/wechat_login"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_sinaLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_15dp"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/icon_sina"
+                android:drawablePadding="@dimen/all_margrin"
+                android:gravity="center"
+                android:text="@string/sina_login"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/text_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

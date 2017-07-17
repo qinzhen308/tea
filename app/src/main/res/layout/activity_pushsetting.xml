@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pushSetting_noteRecommTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_30dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="斗记笔记推荐"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/pushSetting_firendCareTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="好友关注"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/pushSetting_collectTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="收藏笔记"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/pushSetting_likeTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="喜欢笔记"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/pushSetting_dicountTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="评论笔记"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/pushSetting_priMsgTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="私信"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/pushSetting_pushTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/btn_push_select"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="靠近经销商区域接收推送消息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.RegisterActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.RegisterActivity$$ViewBinder
+Unable to write view binder for type com.chaye.douji.doujichaye.activity.LoginActivity: Attempt to recreate a file for type com.chaye.douji.doujichaye.activity.LoginActivity$$ViewBinder

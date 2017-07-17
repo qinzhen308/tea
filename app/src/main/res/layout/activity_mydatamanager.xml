@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--我的资料管理-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@drawable/bg_line_top_bottom"
+        android:minHeight="@dimen/activity_50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_marginRight="@dimen/activity_20dp"
+            android:layout_marginTop="@dimen/all_margrin"
+            android:text="空间名称"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/myDataManager_nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/all_margrin"
+            android:background="@null"
+            android:hint="输入名称"
+            android:paddingRight="@dimen/all_margrin"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@drawable/bg_line_top_bottom">
+
+        <EditText
+            android:id="@+id/myDataManager_contentEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="输入内容"
+            android:maxLength="18"
+            android:minHeight="100dp"
+            android:padding="@dimen/all_margrin"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/myDataManager_numTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/myDataManager_contentEdt"
+            android:layout_margin="@dimen/all_margrin"
+            android:text="0/18"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/myDataManager_saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:layout_marginTop="@dimen/activity_30dp"
+        android:background="@drawable/bg_rectangle_brown5"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>

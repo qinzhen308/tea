@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/title_leftTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/top_back_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/all_margrin"
+        android:paddingRight="@dimen/all_margrin"
+        android:text="返回"
+        android:textColor="@color/default_btn_bg"
+        android:textSize="@dimen/text_size" />
+
+    <ImageView
+        android:id="@+id/title_titleIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/login_title"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/btn_selected"
+        android:textSize="@dimen/title_size" />
+
+    <ImageView
+        android:id="@+id/title_rightIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:padding="@dimen/all_margrin"
+        android:src="@drawable/index_search_icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_rightTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:minHeight="30dp"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保存"
+        android:textColor="@color/btn_selected"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+</RelativeLayout>

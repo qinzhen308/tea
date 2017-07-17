@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/commonDetail_imgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/commonDetail_imgIv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_200"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/commonDetail_titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/black_transparent_bg"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:lines="1"
+            android:paddingLeft="@dimen/all_margrin"
+            android:text="111"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big_big" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/activity_15dp"
+        android:layout_marginTop="@dimen/activity_15dp"
+        android:background="@drawable/bg_rectangle_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingLeft="@dimen/all_margrin"
+        android:paddingRight="@dimen/all_margrin"
+        android:paddingTop="3dp">
+
+        <ImageView
+            android:id="@+id/commonDetail_avatarIv"
+            android:layout_width="@dimen/avatar_size_small"
+            android:layout_height="@dimen/avatar_size_small"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_login_user" />
+
+        <TextView
+            android:id="@+id/commonDetail_nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_marginRight="@dimen/all_margrin"
+            android:text="moum"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表"
+            android:textColor="#6E5840"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+</LinearLayout>

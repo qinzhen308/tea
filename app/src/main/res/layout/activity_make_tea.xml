@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_gray"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@id/title_timer"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="泡茶计时器"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+
+        <TextView
+            android:id="@id/compile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_bg"
+            android:visibility="gone"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/light_brown_text_color" />
+
+       <!-- <Button
+            android:id="@id/compile_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_brown_btn_bg"
+            android:padding="@dimen/margin_10"
+            android:text="取消"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/common_text_size"
+            android:visibility="gone" />-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@id/tv_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_30"
+        android:text="泡法选择"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/common_text_size" />
+
+    <RelativeLayout
+        android:id="@id/pick_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="160.0dip"
+        android:layout_below="@id/tv_choose"
+        android:layout_marginTop="@dimen/margin_30">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/wheel_select_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/tea_timer_custom_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:background="@drawable/activities_detail_name_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/add_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:text="自定义泡法"
+            android:textColor="#ffb1987a"
+            android:textSize="@dimen/common_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/start_btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/tea_timer_custom_btn"
+        android:layout_marginBottom="@dimen/margin_50"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/start_time_icon1" />
+
+
+</RelativeLayout>

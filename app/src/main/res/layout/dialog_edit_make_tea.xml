@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/edit_delete_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <Button
+            android:id="@id/delete_soaking_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/light_red_color"
+            android:padding="@dimen/margin_10"
+            android:text="删除"
+            android:textColor="@color/common_white"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@id/edit_soaking_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@color/common_gray"
+            android:padding="@dimen/margin_10"
+            android:text="修改泡法"
+            android:textColor="@color/common_black"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@color/common_gray"
+            android:padding="@dimen/margin_10"
+            android:text="取消"
+            android:textColor="@color/common_black"
+            android:textSize="20.0sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

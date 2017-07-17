@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:id="@id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建便签"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="便签标题"
+                android:textColor="@color/light_brown_text_color"
+                android:textSize="@dimen/common_text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@id/title_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/edit_line"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@null"
+                    android:hint="填写便签标题"
+                    android:textColor="@color/common_black"
+                    android:textSize="@dimen/common_text_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@id/edit_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/edit_bg_line" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@id/content_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_150"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/round_light_gray_line_white_bg"
+            android:gravity="top|left|center"
+            android:hint="填写便签内容"
+            android:padding="@dimen/margin_10"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_text_size" />
+
+        <Button
+            android:id="@id/save_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@drawable/round_brown_btn_bg"
+            android:text="保存"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+    </LinearLayout>
+</LinearLayout>

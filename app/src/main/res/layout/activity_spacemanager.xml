@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--空间管理-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@drawable/bg_line_top_bottom"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/all_margrin"
+        android:paddingRight="@dimen/all_margrin">
+
+        <TextView
+            android:id="@+id/spaceManager_dataTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:gravity="center_vertical|left"
+            android:text="@string/qzone_data_managment"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/spaceManager_privacyTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:background="@drawable/bg_line_top_bottom"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:gravity="center_vertical|left"
+            android:text="@string/qzone_privacy_setting"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/spaceManager_columnTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:drawableRight="@drawable/right_arrow_icon"
+            android:gravity="center_vertical|left"
+            android:text="@string/qzone_columns"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+</LinearLayout>

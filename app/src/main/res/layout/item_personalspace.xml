@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_personalspace_allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_personalspace_ivLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height">
+
+        <ImageView
+            android:id="@+id/item_personalspace_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/item_personalspace_discountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/chaping_bg"
+            android:gravity="center"
+            android:text="茶评"
+            android:textColor="@color/grey100" />
+
+        <TextView
+            android:id="@+id/item_personalspace_titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/black_transparent_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/all_margrin"
+            android:text="追溯顶级口感--金斗极品大树茶"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+
+        <ImageView
+            android:id="@+id/item_personalspace_iconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/all_margrin"
+        android:background="@color/white"
+        android:padding="@dimen/all_margrin">
+
+
+        <TextView
+            android:id="@+id/item_personalspace_timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/qzone_times"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="2016-6-7"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_personalspace_prasieTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/item_personalspace_commentTv"
+            android:drawableLeft="@drawable/qzone_xin"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_personalspace_commentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_toLeftOf="@+id/item_personalspace_collectTv"
+            android:drawableLeft="@drawable/qzone_message"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_personalspace_collectTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:drawableLeft="@drawable/qzone_start"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/collect_tea_img_iv"
+            android:layout_width="@dimen/height_120"
+            android:layout_height="@dimen/height_120"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dealer_list_test_pic" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical"
+            android:weightSum="4.0">
+
+            <TextView
+                android:id="@id/collect_tea_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/big_text_size" />
+
+            <TextView
+                android:id="@id/collect_tea_brand_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:id="@id/collect_tea_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:id="@id/collect_tea_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/margin_15"
+        android:button="@null"
+        android:drawableRight="@drawable/member_collect_tea_checkbox_icon"
+        android:focusable="false" />
+</RelativeLayout>

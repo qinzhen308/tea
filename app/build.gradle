@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        douji {
+            keyAlias 'douji'
+            keyPassword 'douji2016'
+            storeFile file('/app/bolaa_douji.jks')
+            storePassword 'douji2016'
+        }
+    }
+    compileSdkVersion 22
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "com.becdoor.teanotes"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.2"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.douji
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile project(':DragSortListview')
+    /**
+     *  okhttp  https://github.com/hongyangAndroid/okhttputils
+     *  switchbutton https://github.com/xiaopansky/SwitchButton
+     */
+    compile 'me.xiaopan:switchbutton:1.2.0'
+    compile 'com.facebook.rebound:rebound:0.3.+'
+    //    compile 'com.jakewharton:butterknife:8.4.0'
+    compile files('libs/butterknife-7.0.1.jar')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile 'com.android.support:palette-v7:22.2.0'
+    compile 'com.github.xiangtailiang.tablayout:library:1.0.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
+    //    compile 'com.android.support:support-v4:22.1.1'
+    //添加备注使用
+    compile 'wang.raye.preioc:preioccore:1.0.6'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //snackbar
+    compile 'com.nispok:snackbar:2.11.+'
+}

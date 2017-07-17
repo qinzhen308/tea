@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:background="@color/common_white"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10">
+
+            <TextView
+                android:id="@id/top_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:padding="5dp"
+                android:drawableLeft="@drawable/top_back_icon"
+                android:drawablePadding="@dimen/margin_5"
+                android:text="返回"
+                android:gravity="center"
+                android:textColor="@color/light_brown_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="我的便签"
+                android:textColor="@color/light_brown_text_color"
+                android:textSize="@dimen/activity_title_bar_text_size" />
+
+            <ImageView
+                android:id="@id/setting_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/setting_icon_unchecked" />
+
+            <ImageView
+                android:id="@id/edit_my_notes_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_toLeftOf="@id/setting_btn"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/member_collect_tea_edit_icon" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swip_refresh_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.becdoor.teanotes.view.RBCallbkRecyclerView
+                android:id="@+id/recycleview_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@id/delete_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/black_transparent_bg"
+        android:padding="@dimen/margin_10"
+        android:visibility="gone">
+
+        <Button
+            android:id="@id/delete_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:background="@drawable/round_light_red_btn_bg"
+            android:text="删除便签"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+    </RelativeLayout>
+</RelativeLayout>

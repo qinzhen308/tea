@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textColor="@color/common_text_color_gray"
+        android:textSize="@dimen/small_text_size" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15"
+            android:background="@drawable/my_notes_item_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_15">
+
+            <TextView
+                android:id="@id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:id="@id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textColor="@color/common_text_color_gray"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_8"
+            android:adjustViewBounds="true"
+            android:src="@drawable/my_notes_icon" />
+
+        <CheckBox
+            android:id="@id/notes_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_5"
+            android:button="@null"
+            android:drawableRight="@drawable/member_collect_tea_checkbox_icon"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/my_notes_item_bottom_bg" />
+</LinearLayout>

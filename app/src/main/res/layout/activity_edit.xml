@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/activity_title_bar_menu_margin"
+        android:paddingRight="@dimen/activity_title_bar_menu_margin">
+
+        <Button
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="输入内容"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+
+        <Button
+            android:id="@id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_bg"
+            android:padding="@dimen/margin_10"
+            android:text="保存"
+            android:textColor="@color/light_brown_text_color" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@id/edit_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_weight="1.0"
+        android:background="@drawable/party_gray_line_light_gray_bg"
+        android:gravity="top"
+        android:hint="请输入内容"
+        android:padding="@dimen/margin_10" />
+</LinearLayout>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="center"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建藏茶"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_layout"
+        android:paddingBottom="@dimen/margin_10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="茶品名称"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <EditText
+                        android:id="@id/creat_collect_tea_name_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/edit_line"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="输入茶品名称"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="茶品年份"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <TextView
+                        android:id="@+id/creat_collect_tea_year_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/edit_line"
+                        android:gravity="bottom"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="输入茶品年份"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="购入品牌"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <EditText
+                        android:id="@id/create_collect_tea_brand_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/edit7_line"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="输入购入品牌"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit7_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="购入来源"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <EditText
+                        android:id="@id/create_collect_tea_source_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/edit6_line"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="输入购入来源"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit6_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="购入金额"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <EditText
+                        android:id="@id/create_collect_tea_money_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@id/edit5_line"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="输入购入金额"
+                        android:inputType="numberDecimal"
+                        android:gravity="bottom"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit5_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="购入数量"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/edit3_line"
+                        android:orientation="horizontal"
+                        android:weightSum="3.0">
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@id/edit_line"
+                            android:layout_weight="1.0"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/margin_5">
+
+                            <Button
+                                android:id="@id/choose_unit_one_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:maxEms="2"
+                                android:minEms="1"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/margin_5"
+                                android:drawableRight="@drawable/down_brown_icon"
+                                android:text=""
+                                android:textColor="@color/light_brown_text_color"
+                                android:textSize="@dimen/common_text_size" />
+
+                            <EditText
+                                android:id="@id/num1_et"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_toLeftOf="@id/choose_unit_one_btn"
+                                android:background="@null"
+                                android:gravity="right|center_vertical"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textColor="@color/common_black"
+                                android:textSize="@dimen/common_text_size" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/brown_bg_color" />
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/margin_5">
+
+                            <Button
+                                android:id="@id/choose_unit_two_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/margin_5"
+                                android:drawableRight="@drawable/down_brown_icon"
+                                android:text=""
+                                android:textColor="@color/light_brown_text_color"
+                                android:textSize="@dimen/common_text_size" />
+
+                            <EditText
+                                android:id="@id/num2_et"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_toLeftOf="@id/choose_unit_two_btn"
+                                android:background="@null"
+                                android:gravity="right|center_vertical"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textColor="@color/common_black"
+                                android:textSize="@dimen/common_text_size" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/brown_bg_color" />
+
+                        <RelativeLayout
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="horizontal"
+                            android:paddingRight="@dimen/margin_5">
+
+                            <Button
+                                android:id="@id/choose_unit_three_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:background="@null"
+                                android:drawablePadding="@dimen/margin_5"
+                                android:drawableRight="@drawable/down_brown_icon"
+                                android:text=""
+                                android:textColor="@color/light_brown_text_color"
+                                android:textSize="@dimen/common_text_size" />
+
+                            <EditText
+                                android:id="@id/num3_et"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_toLeftOf="@id/choose_unit_three_btn"
+                                android:background="@null"
+                                android:gravity="right|center_vertical"
+                                android:inputType="number"
+                                android:hint="0"
+                                android:textColor="@color/common_black"
+                                android:textSize="@dimen/common_text_size" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/brown_bg_color" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@id/edit3_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="购入时间"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:id="@id/choose_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <TextView
+                        android:id="@id/create_collect_tea_time_tv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/edit2_line"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="选择购入时间"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit2_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="存茶地址"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_40"
+                    android:layout_marginLeft="@dimen/margin_10">
+
+                    <EditText
+                        android:id="@id/create_collect_tea_address_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/edit1_line"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:background="@null"
+                        android:hint="输入存茶地址"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/common_text_size" />
+
+                    <ImageView
+                        android:id="@id/edit1_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/edit_bg_line" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/add_pic_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/party_gray_line_white_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/add_pic_btn_icon"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="点击添加内容图片"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/common_text_size" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@id/pic_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@id/create_tea_img_iv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/margin_10"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@id/delete_pic_btn"
+                        android:layout_width="@dimen/height_40"
+                        android:layout_height="@dimen/height_40"
+                        android:src="@drawable/delete_pic_icon" />
+
+                    <ImageView
+                        android:id="@id/edit_pic_btn"
+                        android:layout_width="@dimen/height_40"
+                        android:layout_height="@dimen/height_40"
+                        android:layout_marginTop="@dimen/margin_30"
+                        android:src="@drawable/edit_pic_icon" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@id/create_collect_tea_content_et"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_150"
+                android:layout_marginBottom="@dimen/margin_80"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@drawable/party_gray_line_white_bg"
+                android:gravity="top|left|center"
+                android:hint="输入描述内容"
+                android:padding="@dimen/margin_10"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        android:paddingTop="@dimen/margin_10">
+
+        <Button
+            android:id="@id/create_collect_tea_save_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:background="@drawable/round_brown_btn_bg"
+            android:text="保存"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+    </LinearLayout>
+</RelativeLayout>

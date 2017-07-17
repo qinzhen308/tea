@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/round_light_black_bg"
+    android:padding="@dimen/margin_5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffe0e0e0"
+            android:paddingBottom="@dimen/margin_8"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_8"
+            android:text="提醒"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/big_text_size" />
+
+        <TextView
+            android:id="@id/dialog_content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_30"
+            android:background="@color/common_white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:text=""
+            android:textSize="@dimen/common_text_size" />
+
+        <Button
+            android:id="@id/sure_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/round_red_btn_bg"
+            android:text="确定"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@id/ok_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+
+            <Button
+                android:id="@id/cancel_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="1.0"
+                android:background="@drawable/round_light_black_btn_bg"
+                android:text="取消"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/activity_button_text_size" />
+
+            <Button
+                android:id="@id/next_btn"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_weight="1.0"
+                android:background="@drawable/round_red_btn_bg"
+                android:text="下一步"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/activity_button_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

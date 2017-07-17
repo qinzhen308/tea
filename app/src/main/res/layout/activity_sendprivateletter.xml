@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/sendPrivateLetter_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_30dp"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@drawable/bg_rectangle_grey_storke_white_coner"
+        android:gravity="left"
+        android:hint="填写私信内容"
+        android:minHeight="120dp"
+        android:padding="@dimen/all_margrin"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/sendPrivateLetter_okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:background="@drawable/bg_rectangle_brown5"
+        android:gravity="center"
+        android:text="发布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>

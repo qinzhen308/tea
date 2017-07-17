@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe0e0e0"
+        android:paddingBottom="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_8">
+
+        <Button
+            android:id="@id/time_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="取消"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <TextView
+            android:id="@id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择购入时间"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <Button
+            android:id="@id/time_sure_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:paddingRight="@dimen/margin_10"
+            android:text="确定"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/common_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/wheel_date_picker" />
+
+</LinearLayout>

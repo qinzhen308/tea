@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <Button
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建茶评笔记"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+
+        <Button
+            android:id="@id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="离线保存"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/side_tea_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/head_layout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_tea_comment_progress_03"
+            android:orientation="horizontal"
+            android:weightSum="3.0">
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="1.泡前准备"
+                android:textColor="#ffb1987a"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="2.选择泡法"
+                android:textColor="#ffb1987a"
+                android:textSize="@dimen/common_text_size" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="3.撰写茶评"
+                android:textColor="@color/common_white"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/method_name_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/common_text_color_gray"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/common_white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/side_write_setp_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/comment_step_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="#ffb29779"
+                        android:textSize="@dimen/big_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="/"
+                        android:textColor="#ffb29779"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <TextView
+                        android:id="@id/comment_count_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text=""
+                        android:textColor="#ffb29779"
+                        android:textSize="@dimen/small_text_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/comment_step_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textColor="@color/common_black"
+                    android:textSize="@dimen/big_text_size" />
+
+                <TextView
+                    android:id="@id/comment_temp_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/temperature_bg"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/big_text_size" />
+
+                <com.becdoor.teanotes.widget.Countdown
+                    android:id="@id/my_time_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20" />
+
+                <TextView
+                    android:id="@id/comment_notice_name_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_15"
+                    android:background="@color/tv_gray"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:paddingRight="@dimen/margin_15"
+                    android:paddingTop="@dimen/margin_5"
+                    android:text="rtrtrthweh"
+                    android:textColor="@color/brown_bg_color"
+                    android:textSize="@dimen/common_text_size"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@id/comment_start_time_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:src="@drawable/start_time_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@id/parent_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@id/img_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_10">
+
+                            <Button
+                                android:id="@id/general_add_pic_btn"
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/height_200"
+                                android:background="@drawable/side_write_edit_bg"
+                                android:text="+ 添加内容图片"
+                                android:textColor="@color/common_text_color_gray"
+                                android:textSize="20.0sp" />
+
+                            <RelativeLayout
+                                android:id="@id/general_pic_layout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@id/general_pic_url_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/common_text_color_gray"
+                                    android:textSize="20.0sp" />
+
+                                <ImageView
+                                    android:id="@id/create_tea_img_iv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/tea_rating_detail_test" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="@dimen/margin_10"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@id/btn_delete_pic"
+                                        android:layout_width="@dimen/height_40"
+                                        android:layout_height="@dimen/height_40"
+                                        android:src="@drawable/delete_pic_icon" />
+
+                                    <ImageView
+                                        android:id="@id/btn_edit_pic"
+                                        android:layout_width="@dimen/height_40"
+                                        android:layout_height="@dimen/height_40"
+                                        android:layout_marginTop="@dimen/margin_30"
+                                        android:src="@drawable/edit_pic_icon" />
+
+                                    <ImageView
+                                        android:id="@id/btn_add_pic"
+                                        android:layout_width="@dimen/height_40"
+                                        android:layout_height="@dimen/height_40"
+                                        android:layout_marginTop="@dimen/margin_30"
+                                        android:src="@drawable/add_other_pic_icon"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/comment_content_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/common_gray"
+                    android:gravity="top|left|center"
+                    android:hint="输入茶评"
+                    android:padding="@dimen/margin_10"
+                    android:textSize="@dimen/common_text_size" />
+
+                <View
+                    android:id="@id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_110"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        android:paddingTop="@dimen/margin_10"
+        android:visibility="visible">
+
+        <Button
+            android:id="@id/comment_back_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_weight="1.0"
+            android:background="@drawable/round_white_bg"
+            android:text="上一步"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/activity_button_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@id/comment_next_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_weight="1.0"
+            android:background="@drawable/round_white_bg"
+            android:text="下一步"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/activity_button_text_size" />
+
+        <Button
+            android:id="@id/bottom_publish_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1.0"
+            android:background="@drawable/round_brown_btn_bg"
+            android:text="发布"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+    </LinearLayout>
+</RelativeLayout>

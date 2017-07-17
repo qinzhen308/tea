@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#EDEDED</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="skin_tabbar_bg">#FCF8FC</color>
+    <color name="background_tab_pressed">#1AFFFFFF</color>
+    <color name="white10">#2fffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="grey50">#fafafa</color>
+    <color name="grey100">#f5f5f5</color>
+    <color name="grey200">#eeeeee</color>
+    <color name="grey300">#e0e0e0</color>
+    <color name="grey400">#bdbdbd</color>
+    <color name="grey700">#616161</color>
+    <color name="grey800">#424242</color>
+    <color name="grey900">#212121</color>
+    <color name="white_gary">#40ffffff</color>
+    <color name="red_btn">#f6ebbe</color>
+    <color name="default_btn_bg">#FF705840</color>
+    <color name="dafault_text_bg">#FFECECEC</color>
+    <color name="my_notes_bg">#FFF6EBBE</color>
+    <color name="create_coll_tea_bg">#FF9D703E</color>
+    <color name="share_bg">#FF6D591C</color>
+    <color name="enter_name_bg">#FF976530</color>
+    <color name="comment_bg">#FFA78113</color>
+    <color name="collect_bg">#FF976530</color>
+    <color name="enter_name">#FFCDA715</color>
+
+    <color name="green_900">#1B5E20</color>
+
+    <color name="icons">#FFFFFF</color>
+    <color name="btn_selected">#6E5840</color>
+    <color name="btn_nomal">#B2977A</color>
+    <color name="text_grey">#D5D5D5</color>
+    <color name="text_black">#4C4C4C</color>
+
+    <color name="brown">#705840</color>
+
+    <color name="right_bg">#ff696969</color>
+    <color name="blur_bg">#fffffaf0</color>
+    <color name="index_title_left_bg_color">#ff715941</color>
+    <color name="index_title_right_bg_color">#ffb2977a</color>
+    <color name="title_bar_bg">#ffe8e8e8</color>
+    <color name="light_black_bg_color">#ff333333</color>
+    <color name="activities_detail_registration_btn_bg_color">#ffcea815</color>
+    <color name="activities_detail_comment_btn_bg_color">#ffa88213</color>
+    <color name="activities_detail_collection_btn_bg_color">#ff986530</color>
+    <color name="activities_detail_share_btn_bg_color">#ff6d591c</color>
+    <color name="brown_bg_color">#ff715941</color>
+    <color name="light_brown_bg_color">#ffb2977a</color>
+    <color name="points_light_brown_color">#ffccbba9</color>
+    <color name="common_white">#ffffffff</color>
+    <color name="common_black">#ff000000</color>
+    <color name="common_gray">#ffededed</color>
+    <color name="list_divider">#ffcfcfcf</color>
+    <color name="red_color">#ffae1414</color>
+    <color name="light_red_color">#ffe13b3b</color>
+    <color name="gray_line_color">#ffdddddd</color>
+    <color name="common_text_color_gray">#ff969696</color>
+    <color name="tv_gray">#ffdddddd</color>
+    <color name="light_brown_text_color">#ff715941</color>
+    <color name="hot_search_color_1">#ffcea815</color>
+    <color name="hot_search_color_2">#ffa88213</color>
+    <color name="hot_search_color_3">#ffb59472</color>
+    <color name="hot_search_color_4">#ff986530</color>
+    <color name="hot_search_color_5">#ff6d591c</color>
+    <color name="crop__button_bar">#fff3f3f3</color>
+    <color name="crop__button_text">#ff666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+
+    <color name="item_rank_one">#B8A898</color>
+    <color name="item_rank_two">#CCBBA9</color>
+</resources>

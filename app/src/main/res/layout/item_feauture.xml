@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_feauture_allLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_feauture_ivLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_height">
+
+        <ImageView
+            android:id="@+id/item_feauture_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/item_feauture_discountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/chaping_bg"
+            android:gravity="center"
+            android:padding="@dimen/activity_5dp"
+            android:text="茶评"
+            android:textColor="@color/grey100"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/item_feauture_titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/black_transparent_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/all_margrin"
+            android:text="追溯顶级口感--金斗极品大树茶"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+
+        <ImageView
+            android:id="@+id/item_feauture_iconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/all_margrin"
+        android:background="@color/white"
+        android:padding="@dimen/all_margrin">
+
+        <ImageView
+            android:id="@+id/item_feauture_avatarIv"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/all_margrin"
+            android:src="@drawable/icon_login_user" />
+
+        <TextView
+            android:id="@+id/item_feauture_userNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/item_feauture_avatarIv"
+            android:layout_toRightOf="@+id/item_feauture_avatarIv"
+            android:gravity="center"
+            android:text="123333"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_feauture_gradeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_feauture_userNameTv"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_toRightOf="@+id/item_feauture_userNameTv"
+            android:gravity="center_vertical"
+            android:text="豆粉一号"
+            android:textColor="#6D583D"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_feauture_timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_feauture_avatarIv"
+            android:layout_toRightOf="@+id/item_feauture_avatarIv"
+            android:drawableLeft="@drawable/qzone_times"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="123333"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_feauture_prasieTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_feauture_avatarIv"
+            android:layout_toLeftOf="@+id/item_feauture_commentTv"
+            android:drawableLeft="@drawable/qzone_xin"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="1000"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_feauture_commentTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_feauture_avatarIv"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:layout_toLeftOf="@+id/item_feauture_collectTv"
+            android:drawableLeft="@drawable/qzone_message"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/item_feauture_collectTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_feauture_avatarIv"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/all_margrin"
+            android:drawableLeft="@drawable/qzone_start"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="@dimen/activity_10dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:src="@mipmap/ic_launcher"
+    android:layout_width="160dp"
+    android:layout_height="160dp" />
+<LinearLayout
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+
+        android:layout_weight="1"
+        android:textColor="@color/grey900"
+        android:textSize="25dp"
+        android:layout_marginLeft="@dimen/activity_10dp"
+        android:layout_marginTop="@dimen/activity_10dp"
+        android:text="大斗"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+      android:layout_marginRight="@dimen/activity_10dp"
+        android:src="@drawable/collect_ischeck"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:layout_marginLeft="@dimen/activity_10dp"
+        android:layout_marginTop="@dimen/activity_5dp"
+        android:text="品牌：斗记普洱茶"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:layout_marginLeft="@dimen/activity_10dp"
+        android:layout_marginTop="@dimen/activity_10dp"
+        android:text="金额：500元"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:layout_marginLeft="@dimen/activity_10dp"
+        android:layout_marginTop="@dimen/activity_10dp"
+        android:text="数量：350/克"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

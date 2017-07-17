@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--栏目管理-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@color/dafault_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_2dp"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="@dimen/activity_20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:gravity="left|center"
+        android:text="@string/chaping"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:gravity="left|center"
+        android:text="@string/collecation_tea"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:gravity="left|center"
+        android:text="@string/notes"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:textColor="@color/grey900"
+        android:textSize="@dimen/activity_20dp"
+        android:gravity="left|center"
+        android:text="@string/tea_metting"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+<TextView
+
+    android:textSize="@dimen/activity_20dp"
+    android:text="@string/add_new_section"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" />
+</LinearLayout>
+</LinearLayout>

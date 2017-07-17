@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">茶人笔记</string>
+    <!--setting-->
+    <string name="account_manager">账户管理</string>
+    <string name="local_setting">基本设置</string>
+    <string name="safe_setting">安全设置</string>
+    <string name="password_change">密码修改</string>
+    <string name="member_phone">会员手机</string>
+    <string name="member_email">会员邮箱</string>
+    <string name="message_change">更换</string>
+    <string name="renzheng_1">已认证</string>
+    <string name="renzheng_2">未认证</string>
+    <string name="integral_setting">积分等级</string>
+    <string name="push_setting">消息推送设置</string>
+    <string name="clean_cooking_setting">清除浏览缓存</string>
+    <string name="to_app_store">去appstore评价茶人笔记</string>
+    <string name="safe_exit">安全退出</string>
+    <string name="my_message">我的资料管理</string>
+    <string name="nick">昵称</string>
+    <string name="message_sex">性别</string>
+    <string name="message_birthday">生日</string>
+    <string name="message_hometown">家乡</string>
+    <string name="message_habbit">爱好</string>
+    <string name="message_heard">点击上传头像</string>
+    <!--首页-->
+    <string name="main">首页</string>
+    <string name="activity">活动</string>
+    <string name="doucha">斗茶</string>
+    <string name="member_text">会员</string>
+    <string name="activity_manager">活动管理</string>
+    <string name="is_starting_manager">活动进行中</string>
+    <string name="is_stoping_manager">活动结束</string>
+    <string name="qzone_managment">空间管理</string>
+
+    <!--栏目管理-->
+    <string name="qzone_data_managment">我的资料管理</string>
+    <string name="qzone_privacy_setting">隐私设置</string>
+    <string name="qzone_columns">栏目管理</string>
+
+    <!---->
+    <string name="my_name">姓名</string>
+    <string name="input_my_name">输入真实姓名</string>
+    <string name="my_phonenumber">手机</string>
+    <string name="input_my_phonenumber">输入手机号码</string>
+    <string name="peopele_number">人数</string>
+    <string name="input_people_number">输入真实人数</string>
+    <string name="precautions">注：请填写真实的姓名和电话方便我们联系</string>
+    <string name="is_ok">确定参加</string>
+
+    <!---->
+    <string name="found_password">找回密码</string>
+    <string name="input_my_account_number">请在下面输入你要找回的账号：</string>
+    <string name="phonenumber_or_email">手机/邮箱</string>
+    <string name="code">验证码</string>
+    <string name="getcode">获取验证码</string>
+    <string name="next_step">下一步</string>
+    <!---->
+    <string name="my_friends">我的好友</string>
+    <string name="attention_me">关注</string>
+    <string name="my_fans">粉丝</string>
+    <!--隐私设置-->
+    <string name="private_setting">隐私设置</string>
+    <string name="private_setting_who_can_see">\t\t会员空间访问权限</string>
+    <string name="private_setting_all">所有人可见</string>
+    <string name="private_setting_only_attention">仅关注我的人可见</string>
+    <string name="private_setting_only_myself">仅自己可见</string>
+
+    <!--发布私信-->
+    <string name="relase_private_letter">发布私信</string>
+    <string name="input_private_letter">填写私信内容</string>
+    <string name="release_now">发布</string>
+    <!--登录-->
+    <string name="register"></string>
+    <string name="input_username">输入用户名</string>
+    <string name="input_userpassword">输入密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="DASD">DASD</string>
+    <string name="input_code">请输入验证码</string>
+    <string name="it_ok">完成注册</string>
+    <string name="read_private_and_provision">我已阅读并同意</string>
+    <string name="have_account">已有账号？点击</string>
+    <string name="login">登录</string>
+
+    <!--栏目管理-->
+
+    <string name="chaping">茶评</string>
+    <string name="collecation_tea">藏茶</string>
+    <string name="notes">便签</string>
+    <string name="tea_metting">茶会</string>
+    <string name="edit">编辑</string>
+    <string name="detele">删除</string>
+    <string name="save">保存</string>
+    <string name="add_new_section">添加新栏目</string>
+
+<string name="enter_name">报名</string>
+    <string name="comment">评论</string>
+    <string name="collect">收藏</string><string name="share">分享</string><string name="read_more">查看更多</string>
+    <string name="doufen_ask">斗粉评论</string>
+
+
+
+    <!--积分等级-->
+<string name="integral_rules">积分规则\n 点赞：1点积分\n 评论：1点积分\n发布笔记:3点积分\n 分享笔记：1点积分\n 当天最高累计积分不超过10积分</string>
+
+<!--login-->
+<string name="login_input">用户名/手机/邮箱</string>
+    <string name="password_input">密码</string>
+    <string name="login_btn">登录</string>
+    <string name="forgetpassword">忘记密码</string>
+    <string name="register_now">注册帐号</string>
+    <string name="user_company">使用合作帐号登录</string>
+    <string name="wechat_login">微信账户登录</string>
+    <string name="sina_login">新浪账户登录</string>
+    <string name="user_email">手机/邮箱</string>
+
+
+    <string name="push_message_setting">消息推送设置</string>
+    <string name="recommend">茶人笔记推荐</string>
+    <string name="attention">好友关注</string>
+    <string name="collection_notes">收藏笔记</string>
+    <string name="like_notes">喜欢笔记</string>
+    <string name="evalution_notes">评论笔记</string>
+    <string name="private_letter">私 信</string>
+    <string name="is_push_message">靠近经销商区域接受推送消息</string>
+    <!--会员 table-->
+    <string name="member_main">空间管理</string>
+    <string name="member_account">帐号管理</string>
+    <string name="member_notes">笔记管理</string> <string name="member_tibat_tea">我的藏茶</string>
+    <string name="member_notes_two">我的便签</string>
+    <string name="member_activity">活动管理</string>
+    <string name="member_friends">好友管理</string> <string name="member_collcation">我的收藏</string>
+    <string name="member_comment">评论</string>
+<string name="text_back">返回</string>
+
+<string name="notes_status_published">已发布笔记</string>
+    <string name="notes_status_hide">隐藏</string>
+    <string name="notes_status_draft">草稿箱</string>
+    <string name="main_home_page">主页</string>
+    <string name="mian_featured">精选</string>
+
+    <!-- network error-->
+    <string name="net_work_error">网络错误</string>
+
+
+
+    <string name="please_again">请重试</string>
+    <!--snacebar-->
+    <string name="username_not_empty">请输入邮箱或者手机号码</string>
+    <string name="user_password_not_empty">用户密码不能为空</string>
+    <string name="user_password_too_short">密码长度过短，请设置不少于八位的密码</string>
+    <string name="pelase_inter_again">请再次输入确认密码！</string>
+    <string name="password_different">两次密码输入不一致！</string>
+    <string name="code_error">验证码错误</string>
+
+
+</resources>

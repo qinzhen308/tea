@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="2.0">
+
+        <Button
+            android:id="@id/button_general"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/index_title_left_bg_color"
+            android:text="通用茶志"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+
+        <Button
+            android:id="@id/button_chakan"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@color/index_title_right_bg_color"
+            android:text="快速查看"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/common_white"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <Button
+            android:id="@id/cover_add_pic_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="+ 添加封面"
+            android:textSize="20.0sp" />
+
+        <RelativeLayout
+            android:id="@id/pic_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@id/pic_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@id/change_cover_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:drawableLeft="@drawable/add_pic_btn_icon"
+                android:drawablePadding="@dimen/margin_5"
+                android:padding="@dimen/margin_5"
+                android:text="更改封面"
+                android:textColor="@color/light_brown_text_color"
+                android:textSize="@dimen/common_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_40"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="茶志标题"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <EditText
+            android:id="@id/edit_title"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:background="@null"
+            android:hint="输入标题(24字以内)"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/edit_bg_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="@dimen/height_40"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@id/custom_type_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_brown_btn_bg"
+            android:drawablePadding="@dimen/margin_5"
+            android:padding="@dimen/margin_5"
+            android:text="自定义栏目"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_text_size" />
+
+        <TextView
+            android:id="@id/type_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="栏目分类"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <TextView
+            android:id="@id/type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:drawableRight="@drawable/activities_down_icon"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:minEms="4"
+            android:layout_toLeftOf="@id/custom_type_btn"
+            android:hint="添加栏目" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/edit_bg_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_40"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="隐私设置"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <CheckBox
+            android:id="@id/checkbox_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/push_switch_rbtn_icon"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/edit_bg_line" />
+
+    <LinearLayout
+        android:id="@id/add_column_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="#ff474747"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/general_add_column"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center"
+            android:text="添加小标题"
+            android:textColor="#ffcfb596"
+            android:textSize="@dimen/big_text_size" />
+    </LinearLayout>
+</LinearLayout>

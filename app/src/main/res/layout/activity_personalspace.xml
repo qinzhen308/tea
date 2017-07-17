@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/personelSpace_swip_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.becdoor.teanotes.view.RBCallbkRecyclerView
+            android:id="@+id/personelSpace_recycleview_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/personelSpace_titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="#000000">
+
+        <TextView
+            android:id="@+id/personelSpace_backTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back_arrow"
+            android:drawablePadding="@dimen/all_margrin"
+            android:gravity="center"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/personelSpace_titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="某某的空间"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big_big" />
+
+        <TextView
+            android:id="@+id/personelSpace_cateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/all_margrin"
+            android:background="@drawable/bg_rectangle_white_storke5"
+            android:drawablePadding="@dimen/activity_5dp"
+            android:drawableRight="@drawable/right_arrow_icon2"
+            android:gravity="center"
+            android:paddingLeft="@dimen/all_margrin"
+            android:paddingRight="@dimen/all_margrin"
+            android:text="分类"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/personelSpace_erroTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/common_black"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
+
+</RelativeLayout>

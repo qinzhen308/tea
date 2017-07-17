@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_white"
+    android:padding="@dimen/margin_10">
+
+    <RelativeLayout
+        android:id="@id/head_layout"
+        android:layout_width="@dimen/height_60"
+        android:layout_height="@dimen/height_60">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/head_iv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/pic_head"
+            civ_border_color="@color/common_white"
+            civ_border_width="2.0dip" />
+
+        <TextView
+            android:id="@id/f_rankname_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_iv"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/member_grade_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_5"
+            android:paddingRight="@dimen/margin_5"
+            android:text="s"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/head_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sfgsg"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/big_text_size" />
+
+        <TextView
+            android:id="@id/f_tomsigned_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="sfgsg"
+            android:textColor="@color/common_black"
+            android:textSize="@dimen/common_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/right_arrow_icon" />
+
+    <CheckBox
+        android:id="@id/fri_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@null"
+        android:drawableRight="@drawable/member_collect_tea_checkbox_icon"
+        android:focusable="false" />
+</RelativeLayout>

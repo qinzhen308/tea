@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list_popWindow">
+        <item>点赞</item>
+        <item>分享</item>
+        <item>收藏</item>
+        <item>评论</item>
+    </array>
+    <array name="list_popWindow_enroll">
+        <item>报名</item>
+        <item>分享</item>
+        <item>收藏</item>
+        <item>评论</item>
+    </array>
+
+    <array name="list_member">
+        <item>空间管理</item>
+        <item>账号管理</item>
+        <item>笔记管理</item>
+        <item>我的藏茶</item>
+        <item>我的便签</item>
+        <item>活动管理</item>
+        <item>好友管理</item>
+        <item>我的收藏</item>
+        <item>评论管理</item>
+    </array>
+
+</resources>

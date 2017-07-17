@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/dialog_enrollOnline_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/activity_40dp"
+            android:layout_marginRight="@dimen/activity_40dp"
+            android:background="@drawable/bg_rectangle_black_coner"
+            android:padding="@dimen/activity_8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_height"
+                    android:background="@color/bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/all_margrin"
+                    android:text="报名参加"
+                    android:textColor="#705840"
+                    android:textSize="@dimen/text_size_big_big" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_height"
+                    android:layout_marginLeft="@dimen/activity_15dp"
+                    android:layout_marginRight="@dimen/all_margrin"
+                    android:layout_marginTop="@dimen/activity_20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/my_name"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/text_size" />
+
+                    <EditText
+                        android:id="@+id/dialog_enrollOnline_nameEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/all_margrin"
+                        android:background="@null"
+                        android:hint="@string/input_my_name"
+                        android:textColor="@color/common_black"
+                        android:textColorHint="@color/text_grey"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/all_margrin"
+                    android:layout_marginRight="@dimen/all_margrin"
+                    android:src="@drawable/input_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_height"
+                    android:layout_marginLeft="@dimen/activity_15dp"
+                    android:layout_marginTop="@dimen/all_margrin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/my_phonenumber"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/text_size" />
+
+                    <EditText
+                        android:id="@+id/dialog_enrollOnline_phoneEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/all_margrin"
+                        android:background="@null"
+                        android:hint="@string/input_my_phonenumber"
+                        android:textColor="@color/common_black"
+                        android:textColorHint="@color/text_grey"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/all_margrin"
+                    android:layout_marginRight="@dimen/all_margrin"
+                    android:src="@drawable/input_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_height"
+                    android:layout_marginLeft="@dimen/activity_15dp"
+                    android:layout_marginTop="@dimen/all_margrin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/peopele_number"
+                        android:textColor="@color/common_black"
+                        android:textSize="@dimen/text_size" />
+
+                    <EditText
+                        android:id="@+id/dialog_enrollOnline_numEdt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/all_margrin"
+                        android:background="@null"
+                        android:hint="@string/input_people_number"
+                        android:textColor="@color/common_black"
+                        android:textColorHint="@color/text_grey"
+                        android:textSize="@dimen/text_size" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/all_margrin"
+                    android:layout_marginRight="@dimen/all_margrin"
+                    android:src="@drawable/input_line" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_15dp"
+                    android:layout_marginTop="@dimen/activity_10dp"
+                    android:text="@string/precautions"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/text_size" />
+
+                <Button
+                    android:id="@+id/dialog_enrollOnline_enrrollBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/activity_20dp"
+                    android:background="@drawable/shape_singn_up_btn"
+                    android:text="@string/is_ok"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_big" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/dialog_enrollOnline_closeIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/dialog_enrollOnline_layout1"
+            android:layout_alignTop="@+id/dialog_enrollOnline_layout1"
+            android:layout_marginRight="-10dp"
+            android:layout_marginTop="-20dp"
+            android:src="@drawable/activities_dialog_detail_icon" />
+
+    </RelativeLayout>
+</RelativeLayout>

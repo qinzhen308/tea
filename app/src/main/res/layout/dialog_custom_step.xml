@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/scroll_step"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_light_black_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin_5"
+            android:background="@color/common_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/custom_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffe0e0e0"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/margin_15"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_15"
+                android:text="自定义泡法"
+                android:textColor="@color/light_brown_text_color"
+                android:textSize="@dimen/big_text_size" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_40"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20">
+
+                <EditText
+                    android:id="@id/method_name_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/edit_line"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@null"
+                    android:hint="填写泡法名称"
+                    android:textColor="@color/common_black"
+                    android:textSize="@dimen/common_text_size" />
+
+                <ImageView
+                    android:id="@id/edit_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/edit_bg_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@id/step_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/common_white"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@id/add_step_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_20"
+                android:background="@drawable/party_gray_line_light_gray_bg"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/add_icon"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:text="添加泡茶步驟"
+                    android:textColor="@color/light_brown_text_color"
+                    android:textSize="@dimen/activity_button_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_50"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_20"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5">
+
+                <Button
+                    android:id="@id/delete_step_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/round_light_red_btn_bg"
+                    android:text="删除步驟"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/activity_button_text_size"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@id/cancel_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/round_light_black_btn_bg"
+                    android:text="取消"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/activity_button_text_size" />
+
+                <Button
+                    android:id="@id/create_method_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/height_50"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/round_brown_btn_bg"
+                    android:text="保存"
+                    android:textColor="@color/common_white"
+                    android:textSize="@dimen/activity_button_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

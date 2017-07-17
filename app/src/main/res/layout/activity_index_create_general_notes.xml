@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_50"
+        android:background="@color/common_white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+
+        <TextView
+            android:id="@id/top_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/top_back_icon"
+            android:drawablePadding="@dimen/margin_5"
+            android:text="返回"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="创建茶志"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/activity_title_bar_text_size" />
+
+        <Button
+            android:id="@id/save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="离线保存"
+            android:textColor="@color/light_brown_text_color"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+    <com.mobeta.android.dslv.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_layout"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_margin="3dp"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="1px"
+        android:padding="3dp"
+        dslv:click_remove_id="@id/click_remove"
+        dslv:collapsed_height="1px"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onLongPress"
+        dslv:float_alpha="0.6"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="clickRemove"
+        dslv:slide_shuffle_speed="0.3" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/layout_bottom"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_15"
+        android:paddingRight="@dimen/margin_15"
+        android:paddingTop="@dimen/margin_10"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/height_50"
+            android:layout_weight="2.0"
+            android:orientation="horizontal"
+            android:weightSum="3.0">
+
+            <TextView
+                android:id="@id/tv_add_article"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/text"
+                android:gravity="center"
+                android:text="文字"
+                android:textColor="@color/common_white" />
+
+            <TextView
+                android:id="@id/tv_add_pic"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/pic"
+                android:gravity="center"
+                android:text="图片"
+                android:textColor="@color/common_white" />
+
+            <TextView
+                android:id="@id/tv_add_address"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:drawableTop="@drawable/address"
+                android:gravity="center"
+                android:text="地址"
+                android:textColor="@color/common_white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@id/send_btn"
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/height_50"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_weight="1.0"
+            android:background="@drawable/round_brown_btn_bg"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@color/common_white"
+            android:textSize="@dimen/activity_button_text_size" />
+    </LinearLayout>
+</RelativeLayout>

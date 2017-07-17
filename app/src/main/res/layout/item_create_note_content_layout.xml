@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/drag_handle"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@id/ll_article"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/party_gray_line_light_gray_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_toLeftOf="@id/click_remove"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:hint="请输入内容"
+            android:textSize="@dimen/text_size"
+            />
+
+        <ImageView
+            android:id="@id/click_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete_pic_icon" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/updatePW_oldPWEdt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:background="@color/white"
+        android:gravity="center_vertical|left"
+        android:hint="输入原密码"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/all_margrin"
+        android:paddingRight="@dimen/all_margrin"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/updatePW_newPWEdt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:layout_marginTop="@dimen/activity_1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical|left"
+        android:hint="输入新密码"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/all_margrin"
+        android:paddingRight="@dimen/all_margrin"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size" />
+
+    <EditText
+        android:id="@+id/updatePW_confirmPWEdt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_height"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:layout_marginTop="@dimen/activity_1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical|left"
+        android:hint="确认新密码"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/all_margrin"
+        android:paddingRight="@dimen/all_margrin"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/updatePW_okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginLeft="@dimen/all_margrin"
+        android:layout_marginRight="@dimen/all_margrin"
+        android:layout_marginTop="@dimen/activity_30dp"
+        android:background="@drawable/bg_rectangle_brown5"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size" />
+</LinearLayout>

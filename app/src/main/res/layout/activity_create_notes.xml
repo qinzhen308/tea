@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+   android:background="@color/default_btn_bg"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+    <LinearLayout
+
+ android:gravity="right|center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:paddingRight="@dimen/activity_30dp"
+            android:src="@drawable/icon_edit_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+
+android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TextView
+    android:gravity="left|center"
+    android:text="茶人笔记"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_5dp"
+            android:gravity="left|center"
+            android:text="12333333"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_margin="@dimen/activity_20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+<LinearLayout
+    android:gravity="center"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/create_coll_tea_bg"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+    <ImageView
+
+        android:src="@drawable/icon_coll_tea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+<TextView
+    android:layout_marginTop="@dimen/activity_20dp"
+    android:textColor="@color/colorAccent"
+    android:text="1122222"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/activity_20dp"
+        android:textColor="@color/colorAccent"
+        android:text="1122222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:background="@color/create_coll_tea_bg"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+        <ImageView
+
+            android:src="@drawable/icon_coll_tea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            </LinearLayout>
+        <TextView
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:textColor="@color/colorAccent"
+            android:text="@string/notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/activity_20dp"
+            android:textColor="@color/colorAccent"
+            android:text="1122222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</LinearLayout>
